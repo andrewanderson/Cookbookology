@@ -6,8 +6,8 @@
     <ProjectGuid>{D5365EED-BD30-4ABF-A89B-22B228AFEFED}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyCookbookOffline.Domain.Test</RootNamespace>
-    <AssemblyName>MyCookbookOffline.Domain.Test</AssemblyName>
+    <RootNamespace>Cookbookology.Formats.Test</RootNamespace>
+    <AssemblyName>Cookbookology.Formats.Test</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -60,9 +60,9 @@
       <Project>{7dd01e0d-aea6-44e9-bf5a-4f5cc24f19e4}</Project>
       <Name>Awa.Utils</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Cookbookology.Domain\Cookbookology.Domain.csproj">
-      <Project>{1817a4e3-4aa9-4266-bc19-09e56219f772}</Project>
-      <Name>Cookbookology.Domain</Name>
+    <ProjectReference Include="..\..\Cookbookology.Formats\Cookbookology.Formats.csproj">
+      <Project>{d8ac0384-cf04-45b6-8a1f-1d83e6220ca5}</Project>
+      <Name>Cookbookology.Formats</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

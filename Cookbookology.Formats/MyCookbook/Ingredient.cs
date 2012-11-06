@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace Cookbookology.Domain.MyCookbook
+namespace Cookbookology.Formats.MyCookbook
 {
     public class Ingredient
     {

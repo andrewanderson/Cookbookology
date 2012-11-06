@@ -5,9 +5,9 @@ using System.Xml;
 using System.IO;
 using Awa.Utils.IO;
 using System.Collections.Generic;
-using Cookbookology.Domain.MyCookbook;
+using Cookbookology.Formats.MyCookbook;
 
-namespace Cookbookology.Domain.Test.MyCookbook
+namespace Cookbookology.Formats.Test.MyCookbook
 {
     /// <summary>
     /// Test the serialization of the <see cref="Cookbook"/> class and related classes.
