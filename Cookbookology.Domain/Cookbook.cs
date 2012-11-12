@@ -22,7 +22,7 @@ namespace Cookbookology.Domain
         }
 
         [XmlAttribute]
-        public int Version { get; set; }
+        public string Version { get; set; }
 
         [XmlElement]
         public List<Recipe> Recipes { get; set; }

@@ -52,13 +52,23 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="CookbookAssert.cs" />
     <Compile Include="MyCookbook\CookbookTest.cs" />
+    <Compile Include="MyCookbook\IO\MyCookbookConverterTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Awa.Testing\Awa.Testing.csproj">
+      <Project>{799f018f-396e-4efe-b8c5-c7fb88751d26}</Project>
+      <Name>Awa.Testing</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Awa.Utils\Awa.Utils.csproj">
       <Project>{7dd01e0d-aea6-44e9-bf5a-4f5cc24f19e4}</Project>
       <Name>Awa.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Cookbookology.Domain\Cookbookology.Domain.csproj">
+      <Project>{1817a4e3-4aa9-4266-bc19-09e56219f772}</Project>
+      <Name>Cookbookology.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Cookbookology.Formats\Cookbookology.Formats.csproj">
       <Project>{d8ac0384-cf04-45b6-8a1f-1d83e6220ca5}</Project>

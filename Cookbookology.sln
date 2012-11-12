@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awa.Utils", "Awa.Utils\Awa.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cookbookology.Formats", "Cookbookology.Formats\Cookbookology.Formats.csproj", "{D8AC0384-CF04-45B6-8A1F-1D83E6220CA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awa.Testing", "Awa.Testing\Awa.Testing.csproj", "{799F018F-396E-4EFE-B8C5-C7FB88751D26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,11 +63,22 @@ Global
 		{D8AC0384-CF04-45B6-8A1F-1D83E6220CA5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{D8AC0384-CF04-45B6-8A1F-1D83E6220CA5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{D8AC0384-CF04-45B6-8A1F-1D83E6220CA5}.Release|x86.ActiveCfg = Release|Any CPU
+		{799F018F-396E-4EFE-B8C5-C7FB88751D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799F018F-396E-4EFE-B8C5-C7FB88751D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799F018F-396E-4EFE-B8C5-C7FB88751D26}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{799F018F-396E-4EFE-B8C5-C7FB88751D26}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{799F018F-396E-4EFE-B8C5-C7FB88751D26}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{799F018F-396E-4EFE-B8C5-C7FB88751D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799F018F-396E-4EFE-B8C5-C7FB88751D26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{799F018F-396E-4EFE-B8C5-C7FB88751D26}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{799F018F-396E-4EFE-B8C5-C7FB88751D26}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{799F018F-396E-4EFE-B8C5-C7FB88751D26}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D5365EED-BD30-4ABF-A89B-22B228AFEFED} = {C674693D-9C6C-4336-8CEE-E2FD08601EC7}
+		{799F018F-396E-4EFE-B8C5-C7FB88751D26} = {C674693D-9C6C-4336-8CEE-E2FD08601EC7}
 	EndGlobalSection
 EndGlobal
