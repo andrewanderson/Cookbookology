@@ -55,6 +55,7 @@
     <Compile Include="CookbookAssert.cs" />
     <Compile Include="MyCookbook\CookbookTest.cs" />
     <Compile Include="MyCookbook\IO\MyCookbookConverterTest.cs" />
+    <Compile Include="MyCookbook\IO\MyCookbookParserTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +75,11 @@
       <Project>{d8ac0384-cf04-45b6-8a1f-1d83e6220ca5}</Project>
       <Name>Cookbookology.Formats</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Input\MyCookBookSample.mcb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

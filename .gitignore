@@ -6,4 +6,4 @@ obj
 TestResults
 
 # user options
-*.suo
+*.*.suo
