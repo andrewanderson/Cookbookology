@@ -14,6 +14,7 @@ namespace Cookbookology.Domain
         public Recipe()
         {
             this.Ingredients = new List<string>();
+            this.Categories = new List<string>();
         }
 
         /// <summary>

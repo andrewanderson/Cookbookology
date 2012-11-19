@@ -11,6 +11,7 @@ namespace Cookbookology.Formats.MyCookbook
         public Recipe()
         {
             this.Ingredients = new List<Ingredient>();
+            this.TextLines = new List<string>();
         }
 
         [XmlElement("title")]

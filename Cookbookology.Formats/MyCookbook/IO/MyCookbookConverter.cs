@@ -50,11 +50,11 @@ namespace Cookbookology.Formats.MyCookbook.IO
             {
                 var recipe = new Cookbookology.Domain.Recipe()
                 {
-                    Categories = new List<string>(mcbRecipe.Categories.Split(new [] {','})),
+                    Categories = (mcbRecipe.Categories == null) ? new List<string>() : new List<string>(mcbRecipe.Categories.Split(new [] {','})),
                     AdditionalComments = mcbRecipe.Comments,
                     CookingTime = mcbRecipe.CookTime,
                     ImagePath = mcbRecipe.ImagePath,
-                    Ingredients = mcbRecipe.Ingredients.Select(i =>i.NameAndAmount).ToList(),
+                    Ingredients = (mcbRecipe.Ingredients == null) ? new List<string>() : mcbRecipe.Ingredients.Select(i =>i.NameAndAmount).ToList(),
                     PreparationTime = mcbRecipe.PrepTime,
                     Servings = mcbRecipe.Quantity,
                     SourceUri = mcbRecipe.SourceUri,

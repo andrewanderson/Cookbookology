@@ -25,18 +25,16 @@ namespace Cookbookology.Formats.Test.MyCookbook.IO
             bool result = false;
 
             using (var file = File.Open(InputFileName, FileMode.Open))
-            using (var sr = new StreamReader(file))
             {
-
                 // act
-                result = parser.TryRead(null, out cb);
+                result = parser.TryRead(file, out cb);
 
                 file.Close();
             }
 
             // assert
             Assert.IsTrue(result);
-            
+            Assert.AreEqual(15, cb.Recipes.Count);
         }
     }
 }
