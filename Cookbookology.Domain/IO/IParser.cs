@@ -14,8 +14,7 @@ namespace Cookbookology.Domain.IO
         /// <summary>
         /// Open a cookbook from a stream, and convert it to the common format.
         /// </summary>
-        /// <returns>True of the file could be properly read in, or false otherwise.</returns>
-        bool TryRead(Stream inputStream, out Cookbook cookbook);
+        Cookbook Read(Stream inputStream);
 
         /// <summary>
         /// Save a cookbook to the file format for this class.

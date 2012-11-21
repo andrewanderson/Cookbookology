@@ -11,35 +11,24 @@ namespace Cookbookology.Formats.MyCookbook.IO
 {
     public class MyCookbookParser : IParser
     {
-        public bool TryRead(Stream inputStream, out Cookbookology.Domain.Cookbook cookbook)
+        public Cookbookology.Domain.Cookbook Read(Stream inputStream)
         {
             if (inputStream == null) throw new ArgumentNullException("inputStream");
 
-            cookbook = null;
+            var cookbook = new Cookbookology.Domain.Cookbook();
 
-            try
+            using (var zip = new ZipFile(inputStream))
             {
-                // skip first two bytes as per http://george.chiramattel.com/blog/2007/09/deflatestream-block-length-does-not-match.html
-               // inputStream.ReadByte();
-               // inputStream.ReadByte();
-
-                using (var zip = new ZipFile(inputStream))
-                {
-                    var decompressed = zip.GetInputStream(0); // Only one file in a MCB zip. 
+                var decompressed = zip.GetInputStream(0); // Only one file in a MCB zip. 
                                         
-                    var s = new XmlSerializer(typeof(Cookbook));
-                    var mcb = (Cookbook) s.Deserialize(decompressed);
+                var s = new XmlSerializer(typeof(Cookbook));
+                var mcb = (Cookbook) s.Deserialize(decompressed);
 
-                    var converter = new MyCookbookConverter();
-                    cookbook = converter.ConvertToCommon(mcb);
-                }
+                var converter = new MyCookbookConverter();
+                cookbook = converter.ConvertToCommon(mcb);
+            }
 
-                return true;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+            return cookbook;
         }
 
         public void Write(Cookbookology.Domain.Cookbook cookbook, Stream outputStream)

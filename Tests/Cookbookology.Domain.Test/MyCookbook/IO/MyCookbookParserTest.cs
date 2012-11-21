@@ -27,13 +27,12 @@ namespace Cookbookology.Formats.Test.MyCookbook.IO
             using (var file = File.Open(InputFileName, FileMode.Open))
             {
                 // act
-                result = parser.TryRead(file, out cb);
+                cb = parser.Read(file);
 
                 file.Close();
             }
 
             // assert
-            Assert.IsTrue(result);
             Assert.AreEqual(15, cb.Recipes.Count);
         }
     }
