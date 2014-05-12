@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CookbookMain));
             this.recipeTree = new System.Windows.Forms.TreeView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.browseButton = new System.Windows.Forms.Button();
+            this.imageTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.sourceUriTextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -52,12 +54,10 @@
             this.titleTextBox = new System.Windows.Forms.TextBox();
             this.recipeGroupListBox = new System.Windows.Forms.ListBox();
             this.menuToolStrip = new System.Windows.Forms.ToolStrip();
+            this.newFileButton = new System.Windows.Forms.ToolStripButton();
             this.openButton = new System.Windows.Forms.ToolStripButton();
             this.saveButton = new System.Windows.Forms.ToolStripButton();
-            this.newFileButton = new System.Windows.Forms.ToolStripButton();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.imageTextBox = new System.Windows.Forms.TextBox();
-            this.browseButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.menuToolStrip.SuspendLayout();
             this.SuspendLayout();
@@ -98,6 +98,23 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Recipe";
+            // 
+            // browseButton
+            // 
+            this.browseButton.Location = new System.Drawing.Point(597, 577);
+            this.browseButton.Name = "browseButton";
+            this.browseButton.Size = new System.Drawing.Size(96, 23);
+            this.browseButton.TabIndex = 20;
+            this.browseButton.Text = "Browse...";
+            this.browseButton.UseVisualStyleBackColor = true;
+            // 
+            // imageTextBox
+            // 
+            this.imageTextBox.Location = new System.Drawing.Point(79, 577);
+            this.imageTextBox.Name = "imageTextBox";
+            this.imageTextBox.ReadOnly = true;
+            this.imageTextBox.Size = new System.Drawing.Size(512, 20);
+            this.imageTextBox.TabIndex = 19;
             // 
             // label10
             // 
@@ -277,6 +294,16 @@
             this.menuToolStrip.TabIndex = 3;
             this.menuToolStrip.Text = "toolStrip1";
             // 
+            // newFileButton
+            // 
+            this.newFileButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.newFileButton.Image = ((System.Drawing.Image)(resources.GetObject("newFileButton.Image")));
+            this.newFileButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.newFileButton.Name = "newFileButton";
+            this.newFileButton.Size = new System.Drawing.Size(23, 22);
+            this.newFileButton.Text = "New";
+            this.newFileButton.ToolTipText = "New file";
+            // 
             // openButton
             // 
             this.openButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -297,36 +324,9 @@
             this.saveButton.Text = "Save";
             this.saveButton.ToolTipText = "Save file";
             // 
-            // newFileButton
-            // 
-            this.newFileButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.newFileButton.Image = ((System.Drawing.Image)(resources.GetObject("newFileButton.Image")));
-            this.newFileButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.newFileButton.Name = "newFileButton";
-            this.newFileButton.Size = new System.Drawing.Size(23, 22);
-            this.newFileButton.Text = "New";
-            this.newFileButton.ToolTipText = "New file";
-            // 
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog1";
-            // 
-            // imageTextBox
-            // 
-            this.imageTextBox.Location = new System.Drawing.Point(79, 577);
-            this.imageTextBox.Name = "imageTextBox";
-            this.imageTextBox.ReadOnly = true;
-            this.imageTextBox.Size = new System.Drawing.Size(512, 20);
-            this.imageTextBox.TabIndex = 19;
-            // 
-            // browseButton
-            // 
-            this.browseButton.Location = new System.Drawing.Point(597, 577);
-            this.browseButton.Name = "browseButton";
-            this.browseButton.Size = new System.Drawing.Size(96, 23);
-            this.browseButton.TabIndex = 20;
-            this.browseButton.Text = "Browse...";
-            this.browseButton.UseVisualStyleBackColor = true;
             // 
             // CookbookMain
             // 
